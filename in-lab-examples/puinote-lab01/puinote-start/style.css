@@ -1,0 +1,50 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #191919;
+}
+
+.notecard {
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 54);
+    margin: 150px auto 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.note-title {
+    color: #dddddd;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notecard-thumbnail {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.btn-delete {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #595959;
+    background-color: #212121;
+    border: 2px solid #595959;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    color: #dddddd;
+    background-color: #393939;
+    border: 2px solid #dddddd;
+    cursor: pointer;
+}
