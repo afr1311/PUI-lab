@@ -1,0 +1,66 @@
+.notecard {
+    width: 450px;
+    height: 200px;
+    border-radius: 8px;
+    background-color: #212121;
+    margin: 150px auto 0px auto;
+    padding: 20px;
+    /* to make defined with include padding
+    padding is added to inside of the element */
+    box-sizing: border-box;
+    /* makes .notecard container a flex container and its children flex-children*/
+    display: flex;
+}
+
+/* flex-child */
+.notecard-left {
+    width: auto;
+    background-color: #212121;
+    flex-grow: 1;
+}
+
+.notecard-main-content {
+    display: flex;
+}
+
+.notecard-thumbnail {
+    width: 70px;
+    height: 70px;
+    /* posititons image so it covers entire 70px x 70px area 
+    any parts outside of the 70px x 70px area will be cropped out
+    useful when image isn't an exact square but needs to fit into a square */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.notecard-text {
+    margin-top: 26px;
+    margin-left: 20px;
+}
+
+.note-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.note-body {
+    font-size: 14px;
+    font-weight: 400;
+    color: #939393;
+}
+
+.notecard-footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #595959;
+}
+
+/* flex-child */
+.notecard-right {
+    width: 30px;
+    /* pushes to right side of container */
+    margin-left: auto;
+    background-color: green;
+    flex-shrink: 0;
+}
