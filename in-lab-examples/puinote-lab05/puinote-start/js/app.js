@@ -1,8 +1,48 @@
+<<<<<<< Updated upstream
 // We use this class to represent our notecards. Each notecard object contains
 // data for a single note, and a reference to a DOM element corresponding to
 // that notecard.
-class Notecard {
+=======
+// Below is the final code from last week's exercise:
 
+// difference between array and set - can't repeat elements in set
+
+>>>>>>> Stashed changes
+class Notecard {
+  title;
+  body;
+  imageURL;
+  element;
+
+  constructor(title, body, imageURL) {
+    this.title = title;
+    this.body = body;
+    this.imageURL = imageURL;
+  }
+
+  createElement() {
+    console.log('creating');
+  }
+
+}
+
+let notecardSet = new Set();
+
+function addNewNote(title, body, imageURL) {
+  let notecard = new Notecard(title, body, imageURL);
+  notecardSet.add(notecard);
+  return notecard;
+}
+
+let notecardOne = addNewNote(
+  "My first note",
+  "My first note is very short",
+  "assets/warhol-rhino.png"
+);
+
+console.log(notecardSet);
+
+<<<<<<< Updated upstream
     // When we create a new Notecard object, the "constructor"
     // function is run. In the constructor, "this" refers to the
     // newly created Notecard object.
@@ -90,3 +130,63 @@ class Notecard {
 //     ClipboardItem.createElement(() => {
 //         deleteNote(item);
 //     });
+=======
+// looping
+for (let notecard of notecardSet) {
+  notecard.createElement();
+
+}
+
+
+
+// class Notecard {
+//   title;
+//   body;
+//   imageURL;
+//   element;
+
+//   constructor(imageURL, title, body, footer, elementID) {
+//     this.noteImageURL = imageURL;
+//     this.noteTitle = title;
+//     this.noteBody = body;
+// 		this.noteFooter = footer;
+
+//     this.element = document.querySelector(elementID);
+  
+//     const btnExpand = this.element.querySelector('.icon-expand');
+//     const btnCollapse = this.element.querySelector('.icon-collapse');
+//     const btnDelete = this.element.querySelector('.icon-delete');
+
+// 	  btnExpand.onclick = this.expandNote.bind(this);
+// 	  btnCollapse.onclick = this.collapseNote.bind(this);
+//     btnDelete.onclick = this.deleteNote.bind(this);
+
+//     this.updateElement();
+//   }
+
+//   updateElement() {    
+// 	  const noteImageElement = this.element.querySelector('.notecard-thumbnail');
+// 	  const noteTitleElement = this.element.querySelector('.note-title');
+// 	  const noteBodyElement = this.element.querySelector('.note-body');
+// 	  const noteFooterElement = this.element.querySelector('.notecard-footer');
+
+// 	  noteImageElement.src = this.noteImageURL;
+// 	  noteTitleElement.innerText = this.noteTitle;
+// 	  noteBodyElement.innerText = this.noteBody;
+//     noteFooterElement.innerText = this.noteFooter;
+// 	}
+
+//   expandNote() {
+//     this.element.classList.add('expanded');
+//   }
+
+//   collapseNote() {
+//     this.element.classList.remove('expanded');
+//   }
+
+//   deleteNote() {
+//     this.element.remove();
+//   }
+
+// }
+>>>>>>> Stashed changes
